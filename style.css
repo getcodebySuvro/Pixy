@@ -56,7 +56,9 @@ body {
   margin-left: 5px;
   cursor: pointer;
 }
-
+#resize:hover{
+  box-shadow: 0px 0px 7px rgb(0, 106, 255);
+}
 #resize:active{
   transform: scale(0.9);
 
