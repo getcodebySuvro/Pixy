@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  .editor {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+#resizelabel{
+  margin-bottom: 7px;
+}
+
+#imgwidth{
+  width: 33%;
+  padding: 3px 5px;
+  height: 20px;
+  border: 2px solid rgb(0, 106, 255);
+  outline: none;
+  border-radius: 5px;
+  color:rgb(255, 255, 255);
+  background-color: #1d1d1d;
+  font-weight: bold;
+}
+#imgwidth:focus{
+  box-shadow: 0px 0px 7px rgb(0, 106, 255);
+}
+#imgheight{
+  width: 33%;
+  padding: 3px 5px;
+  margin-left: 5px;
+  height: 20px;
+  border: 2px solid rgb(0, 106, 255);
+  background-color: #1d1d1d;
+  outline: none;
+  border-radius: 5px;
+  color:rgb(255, 255, 255) ;
+  font-weight: bold;
+}
+#imgheight:focus{
+  box-shadow: 0px 0px 7px rgb(0, 106, 255);
+}
+
+#resize{
+  font-size: 15px;
+  padding: 5px 7px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 106, 255);
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#resize:active{
+  transform: scale(0.9);
+
+}
+
+  .toolbar {
+    min-width: 25vw;
+    max-width: 25vw;
+    background: #000000;
+    padding-top: 13px;
+    overflow-y: scroll;
+  }
+  
+
+  .toolbar-item {
+    padding: 6px 10px;
+    
+  }
+
+  
+
+  input[type="file"]{
+    display: none;
+  }
+
+  #filelabel{
+    display: inline-block;
+    width: 100px;
+    margin-left: 8px;
+    text-align: center;
+    padding: 7px 13px;
+    color: white;
+    border: 3px solid rgb(0, 106, 255);
+    border-radius: 50px;
+    background-color: #272727;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #filelabel:hover{
+    background-color: rgb(0, 106, 255);
+  }
+
+  #btnDownload{
+    margin-left: 8px;
+    text-align: center;
+    padding: 8px 28px;
+    color: white;
+    border: 3px solid rgb(0, 106, 255);
+    border-radius: 50px;
+    background-color: #272727;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    
+  }
+  #btnDownload:hover{
+    background-color: rgb(0, 106, 255);
+    
+  }
+  
+  .tool-label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .tool-input {
+   width: 85%;
+   height: 4px;
+   cursor: pointer;
+   outline: 0px;
+   border: 0px;
+  }
+  
+  .valueinp{
+    padding: 3px;
+    background-color: rgb(49, 48, 48);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    transition: 0.3s;
+
+  }
+
+  .image-area {
+    flex-grow: 1;
+    padding: 20px;
+    background: #1d1d1d;
+  }
+  
+  #canvas {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+
+  @media (max-width:640px) {
+    .toolbar {
+      max-width: 30vw;
+      min-width: 30vw;
+      background: #000000;
+      padding-top: 15px;
+    }
+    #btnDownload{
+      margin-top: 10px;
+      margin-left: -4px;
+      transform: scale(0.9);
+    }
+    #filelabel{
+      margin-left: -1px;
+      transform: scale(0.9);
+    }
+    .tool-input{
+      margin-bottom: 10px;
+    }
+    #imgwidth{
+      width: 80%;
+      margin-bottom: 5px;
+    }
+    #imgheight{
+      margin-left: 0;
+      width: 80%;
+      margin-bottom: 7px;
+    }
+    #resize{
+      margin-left: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width:920px) {
+    
+    .toolbar {
+      width: 50vw;
+      background: #000000;
+      padding-top: 15px;
+    }
+    #filelabel{
+      width: 60px;
+    }
+    #btnDownload{
+      padding: 7px 15px;
+    }
+    
+  }
